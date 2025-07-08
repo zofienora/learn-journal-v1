@@ -5,12 +5,14 @@
   --color-medium: #888888;  /* lighter text */
   --color-light: #eeeeee;   /* background */
   --color-white: #ffffff;   /* optional: for contrast */
+  --font-general: 'Poppins', sans-serif; /* general font */
 }
 
 /* -------general styles-------------------- */
 
 body {
   background-color: var(--color-light);
+  font-family: var(--font-general);
 }
 
 h1 {

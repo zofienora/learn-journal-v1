@@ -1,8 +1,27 @@
-/* general things */
+/* custom variables */
 
 :root {
   --color-dark: #333333;    /* bold text */
   --color-medium: #888888;  /* lighter text */
   --color-light: #eeeeee;   /* background */
   --color-white: #ffffff;   /* optional: for contrast */
+}
+
+/* -------general styles-------------------- */
+
+body {
+  background-color: var(--color-light);
+}
+
+h1 {
+  color: var(--color-dark);
+}
+
+p {
+  color: var(--color-dark);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }

@@ -2,8 +2,8 @@ function Header() {
   return (
     <header className="header">
         <div className="container">
-            <h1 className="appname">learned()</h1>
-            <p>a daily learning journal to reflect on what you already learned</p>
+            <h1 className="appname">The Daily Learn Journal</h1>
+            <p>A daily learning journal to reflect on what you learned today.</p>
         </div>  
     </header>
   );

@@ -5,6 +5,9 @@ function Header() {
             <h1 className="appname">The Daily Learn Journal</h1>
             <p>A daily learning journal to reflect on what you learned today.</p>
         </div>  
+        <div className="container">
+            <button className="darkToggle">Light/Dark</button>
+        </div>
     </header>
   );
 }

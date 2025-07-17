@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 
 
-function EntryForm({ onAddEntry }) {
-    const [title, setTitle] = useState("");
-    const [content, setContent] = useState("");
+function EntryForm({ onAddEntry }) { // Functional component for the entry form
+    const [title, setTitle] = useState(""); // State for the title input
+    const [content, setContent] = useState(""); // State for the content input
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (e) => { // Function to handle form submission
+        e.preventDefault(); // Prevent the default form submission behavior
 
-        if (!content.trim()) return;
+        if (!content.trim()) return; //  if the content field is empty (even if it has only spaces), the function exits early and doesn’t submit anything
 
-        const newEntry = {
-        id: Date.now(),
-        title: title.trim(),
-        content: content.trim(),
-        date: new Date().toLocaleDateString(),
+        const newEntry = { // Create a new entry object with the current date and time
+        id: Date.now(), // Generate a unique ID based on the current timestamp
+        title: title.trim(), // Trim whitespace from the title
+        content: content.trim(), // Trim whitespace from the content
+        date: new Date().toLocaleDateString(), // Format the current date as a string
         };
 
-        onAddEntry(newEntry);
-        setTitle("");
-        setContent("");
+        onAddEntry(newEntry); // Call the onAddEntry function passed as a prop to add the new entry
+        setTitle(""); // Reset the title input field to an empty string
+        setContent(""); // Reset the content input field to an empty string
     };
+
+/*      */
 
 
     return (

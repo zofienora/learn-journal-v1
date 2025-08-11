@@ -24,14 +24,28 @@ function App() {
   };
 
   const handleDeleteEntry = (id) => {
-  setEntries((prev) => prev.filter((entry) => entry.id !== id));
-};
+    setEntries((prev) => prev.filter((entry) => entry.id !== id));
+  };
+
+  const handleEditEntry = (id, newTitle, newContent) => {
+    setEntries((prev) =>
+      prev.map((entry) =>
+        entry.id === id
+          ? { ...entry, title: newTitle.trim(), content: newContent.trim() }
+          : entry
+      )
+    );
+  };
 
   return (
     <main>
       <Header />
       <EntryForm onAddEntry={handleAddEntry} />
-      <EntryList entries={entries} onDeleteEntry={handleDeleteEntry} />
+      <EntryList
+        entries={entries}
+        onDeleteEntry={handleDeleteEntry}
+        onEditEntry={handleEditEntry}
+      />
       <Footer />
     </main>
   );

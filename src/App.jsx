@@ -23,11 +23,15 @@ function App() {
     setEntries((prev) => [...prev, newEntry]);
   };
 
+  const handleDeleteEntry = (id) => {
+  setEntries((prev) => prev.filter((entry) => entry.id !== id));
+};
+
   return (
     <main>
       <Header />
       <EntryForm onAddEntry={handleAddEntry} />
-      <EntryList entries={entries} />
+      <EntryList entries={entries} onDeleteEntry={handleDeleteEntry} />
       <Footer />
     </main>
   );

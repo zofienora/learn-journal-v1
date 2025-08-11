@@ -1,7 +1,7 @@
 
 function EntryList({ entries }) {
   if (!entries || entries.length === 0) {
-    return <p className="entry-empty">No entries yet — add your first one ✨</p>;
+    return <div className="container"> <p className="entry-empty">No entries yet — add your first one ✨</p></div>;
   }
 
   // newest first, without mutating the original array

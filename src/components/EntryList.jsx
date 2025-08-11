@@ -1,5 +1,5 @@
 
-function EntryList({ entries }) {
+function EntryList({ entries, onDeleteEntry }) {
   if (!entries || entries.length === 0) {
     return <div className="container"> <p className="entry-empty">No entries yet — add your first one ✨</p></div>;
   }
@@ -17,6 +17,12 @@ function EntryList({ entries }) {
             </div>
             <h3 className="entry-title">{entry.title || "Untitled"}</h3>
             <p className="entry-content">{entry.content}</p>
+            <button
+              className="delete-button"
+              onClick={() => onDeleteEntry(entry.id)}
+            >
+              Delete
+            </button>
             </li>
         ))}
         </ul>

@@ -3,7 +3,7 @@ function Footer() {
         <>
         <footer>
             <div className="container">
-                <p>coded and designed by @sopheenori </p>
+                <p className="footer">coded and designed by @sopheenori </p>
             </div>
         </footer>
         </>

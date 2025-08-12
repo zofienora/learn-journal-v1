@@ -28,6 +28,21 @@
   font-weight: 200;
 }
 
+.submit-button {
+  width: 20%;
+  padding: .25rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+
+
 .first_sentence {
   font-size: 1rem;
   font-weight: 300;

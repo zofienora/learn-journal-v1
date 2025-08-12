@@ -27,3 +27,9 @@
   font-size: 1rem;
   font-weight: 200;
 }
+
+.first_sentence {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-medium);
+}

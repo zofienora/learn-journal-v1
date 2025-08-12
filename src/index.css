@@ -1,9 +1,9 @@
 /* custom variables */
 
 :root {
-  --color-dark: #333333;    /* bold text */
-  --color-medium: #888888;  /* lighter text */
-  --color-light: #eeeeee;   /* background */
+  --color-dark: #1A1A1A;    /* bold text */
+  --color-medium: #555555;  /* lighter text */
+  --color-light: #FCFCFC;   /* background */
   --color-white: #ffffff;   /* optional: for contrast */
   --font-general: 'Poppins', sans-serif; /* general font */
 }

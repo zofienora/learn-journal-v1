@@ -3,7 +3,7 @@
 :root {
   --color-dark: #1A1A1A;    /* bold text */
   --color-medium: #555555;  /* lighter text */
-  --color-light: #FCFCFC;   /* background */
+  --color-light: #ffffff;   /* background */
   --color-white: #ffffff;   /* optional: for contrast */
   --font-general: 'Poppins', sans-serif; /* general font */
 }
@@ -26,4 +26,5 @@ p {
 .container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1000px;
 }

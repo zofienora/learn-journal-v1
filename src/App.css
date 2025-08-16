@@ -58,10 +58,27 @@
 /* ----------------ENTRY LIST----------------*/
 
 .entry-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-left: 0;
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;        /* 1 col on small screens */
+  gap: 1rem;                          /* space between cards */
+}
+
+/* Step up columns responsively (max 5) */
+@media (min-width: 600px) {
+  .entry-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .entry-list { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1200px) {
+  .entry-list { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1500px) {
+  .entry-list { grid-template-columns: repeat(5, 1fr); }
 }
 
 .entry-meta {
@@ -72,11 +89,15 @@
   list-style: none;
 }
 
+/* Cards */
 .entry-card {
-  align-content: left;
-  margin-bottom: 1rem;
-  list-style: none;
-  border: 1px solid var(--color-medium);
-  border-radius: 5px;
+  border: 1px solid var(--color-chrome, #C0C0C0);
+  border-radius: 10px;
+  background: var(--color-white, #FFFFFF);
   padding: 1rem;
 }
+
+/* Keep your existing text styles */
+.entry-title { color: var(--color-dark); margin: 0 0 .5rem; font-weight: 600; }
+.entry-content { color: var(--color-medium); white-space: pre-wrap; }
+.entry-date { color: var(--color-medium); font-size: .85rem; }

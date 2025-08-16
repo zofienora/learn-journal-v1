@@ -40,6 +40,12 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
                         placeholder="What did you learn today?"
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter" && !e.shiftKey) {
+                            e.preventDefault(); // prevent newline
+                            handleSubmit(e);    // submit the form
+                            }
+                        }}
                         className="entry-content"
                         rows="5"
                     />

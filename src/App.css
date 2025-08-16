@@ -1,8 +1,10 @@
-.appname {
-  text-align: left; 
-  font-size: 3rem;
-  font-weight: 400;;
-}
+
+
+
+
+
+
+/* ----------------------------------------------------- */
 
 .entry-form {
   margin: 1rem 0;
@@ -43,14 +45,6 @@
   font-weight: 300;
   cursor: pointer;
   border-radius: 25px;
-}
-
-
-
-.first_sentence {
-  font-size: 1rem;
-  font-weight: 300;
-  color: var(--color-medium);
 }
 
 

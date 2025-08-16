@@ -1,6 +1,57 @@
 
+/* -----------------------HEADER-------------------------------- */
+
+.header-above {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-left-one {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+
+}
+
+.header-left-one p {
+  margin: 0;
+  padding-bottom: 0.1rem;
+}
+
+.header-one-one {
+  font-weight:800;
+  letter-spacing: 1px; 
+}
+
+.header-one {
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+.span-red {
+  color: red;
+  font-weight: 500;
+}
+
+.header-two {
+  font-weight: 100;
+  color: var(--color-medium);
+  text-transform: uppercase;;
+}
 
 
+.header-right-one {
+  text-align: right;
+  width: 70%;
+}
+
+.header-right-one p {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
 
 

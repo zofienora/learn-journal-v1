@@ -20,6 +20,7 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
         onAddEntry(newEntry); // Call the onAddEntry function passed as a prop to add the new entry
         setTitle(""); // Reset the title input field to an empty string
         setContent(""); // Reset the content input field to an empty string
+        setShowForm(false); // Hide the form after submission
     };
 
     const [showForm, setShowForm] = useState(false);
@@ -31,7 +32,9 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
                 <button onClick={() => setShowForm(!showForm)}>
                     {showForm ? "Close" : "+ New Entry"}
                 </button>
-                <form className="entry-form" onSubmit={handleSubmit}>
+
+                {showForm &&
+                <form className="entry-form" onSubmit={handleSubmit} >
                     <input
                         type="text"
                         placeholder="Title (optional)"
@@ -53,7 +56,7 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
                         rows="5"
                     />
                     <button type="submit" className="submit-button">Add Entry</button>
-                </form>      
+                </form> }     
             </div>
         </>
     )

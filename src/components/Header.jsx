@@ -22,7 +22,7 @@ function Header() {
           </div>
           <div className="header-below">
             <div className="below-one">{today}</div>
-            <div className="below-two"></div>
+            <div className="below-two ibm-plex-mono-light"></div>
           </div>
         </div>  
        {/*  <div className="container">

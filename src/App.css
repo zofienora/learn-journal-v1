@@ -114,7 +114,21 @@
   border-radius: 25px;
 }
 
-
+.entry-button {
+  width: 20%;
+  padding: .25rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  min-width: 120px;
+  max-width: 150px;
+}
 
 /* ----------------ENTRY LIST----------------*/
 

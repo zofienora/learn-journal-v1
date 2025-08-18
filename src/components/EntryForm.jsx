@@ -29,7 +29,7 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
     return (
         <>
             <div className="container">
-                <button onClick={() => setShowForm(!showForm)}>
+                <button className="entry-button" onClick={() => setShowForm(!showForm)}>
                     {showForm ? "Close" : "+ New Entry"}
                 </button>
 

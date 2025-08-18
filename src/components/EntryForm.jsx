@@ -22,12 +22,15 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
         setContent(""); // Reset the content input field to an empty string
     };
 
-/*      */
+    const [showForm, setShowForm] = useState(false);
 
 
     return (
         <>
             <div className="container">
+                <button onClick={() => setShowForm(!showForm)}>
+                    {showForm ? "Close" : "+ New Entry"}
+                </button>
                 <form className="entry-form" onSubmit={handleSubmit}>
                     <input
                         type="text"

@@ -17,12 +17,12 @@ function Header() {
                   <p className="header-two">a minimal learning journal</p>
               </div>
               <div className="header-right-one">
-                <p className="header-three">Learning doesn’t happen all at once — it builds, moment by moment. Recording your reflections transforms small steps into lasting insight.</p>
+                <p className="header-three">Recording your reflections transforms small steps into lasting insight.</p>
               </div>
           </div>
           <div className="header-below">
             <div className="below-one">{today}</div>
-            <div className="below-two ibm-plex-mono-light"></div>
+            <div className="below-two ibm-plex-mono-light">The Minimal — but not so minimal — Learning Journal is about more than notes. It is about tracking your progress, rewiring your brain for growth, and discovering how small, daily reflections add up. Over weeks, you see what you’ve built, what you’ve understood, and how far you’ve come. It is about discipline, curiosity, and the simple act of showing up every day.</div>
           </div>
         </div>  
        {/*  <div className="container">

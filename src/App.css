@@ -148,7 +148,8 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;        /* 1 col on small screens */
-  gap: 1rem;                          /* space between cards */
+  gap: 1rem;      
+  padding-bottom: 6rem;                    /* space between cards */
 }
 
 /* Step up columns responsively (max 5) */

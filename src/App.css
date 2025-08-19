@@ -109,9 +109,15 @@
   border: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 100;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 5px;
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.submit-button:active {
+  background-color: var(--color-medium);
 }
 
 .entry-button {
@@ -122,12 +128,16 @@
   border: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 100;
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 1rem;
   min-width: 120px;
   max-width: 150px;
+}
+
+.entry-button:active {
+  background-color: var(--color-medium);
 }
 
 /* ----------------ENTRY LIST----------------*/

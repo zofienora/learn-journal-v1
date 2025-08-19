@@ -146,7 +146,6 @@
   list-style: none;
   margin: 2rem 0;
   padding: 0;
-
   display: grid;
   grid-template-columns: 1fr;        /* 1 col on small screens */
   gap: 1rem;                          /* space between cards */
@@ -177,13 +176,20 @@
 /* Cards */
 .entry-card {
   border: 1px solid var(--color-chrome, #C0C0C0);
-  border-radius: 10px;
+  border-radius: 5px;
   background: var(--color-white, #FFFFFF);
   padding: 1rem;
 }
 
 /* Keep your existing text styles */
-.entry-title { color: var(--color-dark); margin: 0 0 .5rem; font-weight: 600; }
+.entry-title { 
+  color: var(--color-dark); 
+  margin: 0 0 .5rem; 
+  font-weight: 200; 
+  
+}
+
+
 .entry-content { color: var(--color-medium); white-space: pre-wrap; }
 .entry-date { color: var(--color-medium); font-size: .85rem; }
 

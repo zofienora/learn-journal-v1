@@ -43,7 +43,7 @@ function EntryForm({ onAddEntry }) { // Functional component for the entry form
                         className="entry-title"
                     />
                     <textarea
-                        placeholder="What did you learn today?"
+                        placeholder=""
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                         onKeyDown={(e) => {

@@ -186,3 +186,21 @@
 .entry-title { color: var(--color-dark); margin: 0 0 .5rem; font-weight: 600; }
 .entry-content { color: var(--color-medium); white-space: pre-wrap; }
 .entry-date { color: var(--color-medium); font-size: .85rem; }
+
+
+
+
+/* --------------------------FOOTER--------------------------------------- */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: .3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;  
+  font-weight: 100;
+}

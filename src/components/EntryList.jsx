@@ -46,15 +46,15 @@ function EntryList({ entries, onDeleteEntry, onEditEntry }) {
                     onChange={(e) => setEditContent(e.target.value)}
                     rows="5"
                     />
-                    <button onClick={saveEdit}>Save</button>
-                    <button onClick={() => setEditingId(null)}>Cancel</button>
+                    <button className="entrylist-button" onClick={saveEdit}>Save</button>
+                    <button className="entrylist-button" onClick={() => setEditingId(null)}>Cancel</button>
                 </>
                 ) : (
                 <>
                     <h3 className="entry-title">{entry.title || "Untitled"}</h3>
                     <p className="entry-content">{entry.content}</p>
-                    <button onClick={() => startEdit(entry)}>Edit</button>
-                    <button onClick={() => onDeleteEntry(entry.id)}>Delete</button>
+                    <button className="entrylist-button" onClick={() => startEdit(entry)}>Edit</button>
+                    <button className="entrylist-button" onClick={() => onDeleteEntry(entry.id)}>Delete</button>
                 </>
                 )}
             </li>
